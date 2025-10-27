@@ -1,6 +1,6 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/1402048/151947958-0bcadf38-3a82-4b4e-96b4-a38d3721d737.png" align="right" height="255px" /></p>
 
-# 👟 Trainer
+# 👟 VIrtual NPC - Dialogue Optimized
 An opinionated general purpose model trainer on PyTorch with a simple code base.
 
 ## Installation
@@ -156,17 +156,5 @@ trainer.fit()
     ```console
     tensorboard --logdir="./profiler/"
     ```
-
-## Supported Experiment Loggers
-- [Tensorboard](https://www.tensorflow.org/tensorboard) - actively maintained
-- [ClearML](https://clear.ml/) - actively maintained
-- [MLFlow](https://mlflow.org/)
-- [Aim](https://aimstack.io/)
-- [WandDB](https://wandb.ai/)
-
-To add a new logger, you must subclass [BaseDashboardLogger](trainer/logging/base_dash_logger.py) and overload its functions.
-
-## Anonymized Telemetry
-We constantly seek to improve 🐸 for the community. To understand the community's needs better and address them accordingly, we collect stripped-down anonymized usage stats when you run the trainer.
 
 Of course, if you don't want, you can opt out by setting the environment variable `TRAINER_TELEMETRY=0`.
